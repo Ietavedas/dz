@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv='X-UA-Compatible', content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="css/vendors.css")
+        link(rel="stylesheet" type='text/css' href="css/main.css")
+        //- link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic")
+        //- link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,400,500,600,700,800,900&amp;subset=cyrillic")
+        title
+            block title
+    body
+        mixin icon(name)
+            svg(class="icon icon-" + name)
+                use(xlink:href="#icon-" + name)
+
+        block vars
+
+        .page
+            include templates/header
+
+            if (isInner === true)
+                .content.content--inner
+                    block content
+            else
+                .content
+                    block content
+
+            include templates/footer
+
+
+        script(src="js/app.js" type="text/javascript")
