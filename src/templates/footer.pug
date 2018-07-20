@@ -1,1 +1,30 @@
 block vars
+
+footer.b-footer
+    .container
+        .row
+            .col-xs-3
+                .b-footer__logo.b-logo
+
+            .col-xs-6
+
+                - var footerMenu = ['Доставка из Китая', 'Вакансии', 'Все услуги', 'Клиенту', 'Акции', 'Франчайзинг']
+                nav.b-footer__menu
+
+                    each item in footerMenu
+                        div.b-footer__menu-item
+                            a(href="#")= item
+            
+            .col-xs-3
+                .b-footer__address
+                    | manager@uexpress.ru
+                    br
+                    br 
+                    | 115221, г. Челябинск,
+                    br 
+                    | ул. Северная, д. 29-в
+                    br
+                    br 
+                    | Мы работаем по 24 часа
+                    br 
+                    | 5 дней в неделю

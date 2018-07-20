@@ -1,1 +1,23 @@
-.test asd
+extends ../base
+
+block vars
+
+block content
+    section.b-slider
+        .b-slider__dots
+
+    section.b-info
+        h3.b-info__header 5 шагов к заявке
+
+        .b-info__steps
+            .container
+
+                - var stepsTitles = ['Расчет стоимости', 'Вызвать курьера', 'Оплатить услуги', 'Заключить договор', 'Предоставить данные']
+                .row(flex flex-wrap start-center)
+                    
+                    each val, index in stepsTitles
+                        .col-xs-4
+                            .b-info__step(class="b-info__step--"+ (index+1))
+                                .b-info__step-img
+                                .b-steps__step-title= val
+                                .b-steps__step-text Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.

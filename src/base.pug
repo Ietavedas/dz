@@ -18,17 +18,17 @@ html(lang="ru-RU")
 
         block vars
 
-        .page
-            include templates/header
+        //- .page
+        include templates/header
 
-            if (isInner === true)
-                .content.content--inner
-                    block content
-            else
-                .content
-                    block content
+        if (isInner === true)
+            .content.content--inner
+                block content
+        else
+            .content
+                block content
 
-            include templates/footer
+        include templates/footer
 
 
         script(src="js/app.js" type="text/javascript")

@@ -1,0 +1,37 @@
+.b-header
+	position absolute
+	color #a9c5e0
+	line-height 50px
+	left 0
+	right 0
+	margin 35px auto 0
+	z-index 1
+
+.b-header__logo
+	height 48px
+	float left
+
+.b-header__title
+	margin-left 33px
+	float left
+	letter-spacing 1px
+	&::before
+		content '|'
+		display inline-block
+		margin-right 29px
+
+.b-header__phone
+	text-align center
+	letter-spacing 1px
+	&::before
+		content ''
+		display inline-block
+		width 15px
+		height 15px
+		background url('../images/phone.png') no-repeat center
+		margin-right 11px
+		vertical-align middle
+
+.b-header__button
+	width 140px
+	float right

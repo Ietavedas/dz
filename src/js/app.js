@@ -1,8 +1,11 @@
+import Slider from './classes/slider'
+
 window.App = {
     debug: false,
     // debug: true,
     lang: 'ru'
 };
+
 
 // debug detect
 
@@ -19,5 +22,5 @@ if (App.debug) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    new Slider();
 });

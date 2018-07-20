@@ -27,7 +27,7 @@ const path = {
         js: 'assets/js/',
         styleVendors: 'assets/css/',
         style: 'assets/css/',
-        img: 'assets/img/',
+        img: 'assets/images/',
         fonts: 'assets/fonts/',
         icons: 'assets/icons/',
         files: 'assets/files/'
@@ -37,7 +37,7 @@ const path = {
         js: 'src/js/app.js',
         styleVendors: 'src/style/vendors.styl',
         style: 'src/style/main.styl',
-        img: 'src/img/**/*.*',
+        img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*',
         icons: 'src/icons/*.svg',
         files: 'src/files/*.*'
@@ -46,7 +46,7 @@ const path = {
         pug: 'src/**/*.pug',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.styl',
-        img: 'src/img/**/*.*',
+        img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*',
         icons: 'src/icons/*.svg',
         files: 'src/files/*.*'

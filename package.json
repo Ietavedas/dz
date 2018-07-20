@@ -29,6 +29,7 @@
     "webpack-stream": "^4.0.0"
   },
   "dependencies": {
-    "imagemin-pngquant": "^5.0.0"
+    "imagemin-pngquant": "^5.0.0",
+    "reset-css": "^4.0.1"
   }
 }
